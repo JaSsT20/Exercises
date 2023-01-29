@@ -11,7 +11,8 @@ namespace Exercises
             CalculatePolygonArea(5, 13.12f);
             Console.WriteLine("---------------------------");
             DegreesToRadians(1);
-
+            Console.WriteLine("---------------------------");
+            CentigradesToFahrenheit(0);
         }
 
         public static void PrintMyName()
@@ -22,6 +23,7 @@ namespace Exercises
             Console.WriteLine("He agregado una linea.");
         }
 
+        //Cap 2 -> Ejercicio 1
         public static void CalculatePolygonArea(int totalSides, float sideLength)
         {
             float perimeter = totalSides * sideLength;
@@ -30,12 +32,20 @@ namespace Exercises
             Console.WriteLine($"El perímetro es: {perimeter}");
         }
 
+        //Cap 2 -> Ejercicio 3
         public static void DegreesToRadians(float degreesToConvert)
         {
             const float PI = 3.1416f;
             float radians = (degreesToConvert * PI/180);
             System.Console.WriteLine($"Grados a convertir: {degreesToConvert}");
             System.Console.WriteLine($"Total radianes: {radians}");
+        }
+        //Cap 2 -> Ejercicio 4
+        public static void CentigradesToFahrenheit(float centigradesToConvert)
+        {
+            float fahrenheit = (centigradesToConvert * 9/5) + 32;
+            System.Console.WriteLine($"Grados centígrados a convertir: {centigradesToConvert}°C");
+            System.Console.WriteLine($"Total fahrenheit: {fahrenheit}°F");
         }
     }
 }
