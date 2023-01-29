@@ -70,6 +70,55 @@ namespace Exercises
             else
                 Console.WriteLine($"{number} es impar.");
         }
-        //Cap 3 -> Ejercicio 3
+        //Cap 3 -> Ejercicio 4
+        public static void DayOfTheWeek()
+        {
+            System.Console.WriteLine("Introduzca un número del 1-7: ");
+            int option = int.Parse(Console.ReadLine());
+            
+            switch(option)
+            {
+                case 1:
+                {
+                    Console.WriteLine("Domingo.");
+                    break;
+                }
+                case 2:
+                {
+                    Console.WriteLine("Lunes.");
+                    break;
+                }
+                case 3:
+                {
+                    Console.WriteLine("Martes.");
+                    break;
+                }
+                case 4:
+                {
+                    Console.WriteLine("Miércoles.");
+                    break;
+                }
+                case 5:
+                {
+                    Console.WriteLine("Jueves.");
+                    break;
+                }
+                case 6:
+                {
+                    Console.WriteLine("Viernes.");
+                    break;
+                }
+                case 7:
+                {
+                    Console.WriteLine("Sábado.");
+                    break;
+                }
+                default:
+                {
+                    System.Console.WriteLine("Número inválido.");
+                    break;
+                }
+            }
+        }
     }
 }
