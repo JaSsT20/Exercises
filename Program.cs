@@ -19,7 +19,7 @@ namespace Exercises
             EvenOrOdd();
             Console.WriteLine("---------------------------");
             DayOfTheWeek();
-            Console.ReadKey();
+            Console.ReadLine();
         }
 
         public static void PrintMyName()
