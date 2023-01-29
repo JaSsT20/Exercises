@@ -6,7 +6,7 @@ namespace Exercises
     {
         public static void Main(string[] args)
         {
-            
+            new PrintMyName();
         }
     }
 }
