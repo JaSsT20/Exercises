@@ -15,6 +15,8 @@ namespace Exercises
             CentigradesToFahrenheit(0);
             Console.WriteLine("---------------------------");
             DolarToEuro(1);
+            Console.WriteLine("---------------------------");
+            EvenOrOdd();
         }
 
         public static void PrintMyName()
@@ -56,5 +58,18 @@ namespace Exercises
             Console.WriteLine($"Dólares a convertir: ${dolarToConvert}");
             Console.WriteLine($"Total euros: €{totalEuros}");
         }
+
+        //Cap 3 -> Ejercicio 1
+        public static void EvenOrOdd()
+        {
+            Console.WriteLine("Introduzca un número: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if(number % 2 == 0)
+                Console.WriteLine($"{number} es par.");
+            else
+                Console.WriteLine($"{number} es impar.");
+        }
+        //Cap 3 -> Ejercicio 3
     }
 }
