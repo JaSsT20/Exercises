@@ -10,7 +10,8 @@ namespace Exercises
             Console.WriteLine("---------------------------");
             CalculatePolygonArea(5, 13.12f);
             Console.WriteLine("---------------------------");
-            
+            DegreesToRadians(1);
+
         }
 
         public static void PrintMyName()
@@ -27,6 +28,14 @@ namespace Exercises
             Console.WriteLine($"Total de lados: {totalSides}");
             Console.WriteLine($"Largo de los lados: {sideLength}");
             Console.WriteLine($"El perímetro es: {perimeter}");
+        }
+
+        public static void DegreesToRadians(float degreesToConvert)
+        {
+            const float PI = 3.1416f;
+            float radians = (degreesToConvert * PI/180);
+            System.Console.WriteLine($"Grados a convertir: {degreesToConvert}");
+            System.Console.WriteLine($"Total radianes: {radians}");
         }
     }
 }
