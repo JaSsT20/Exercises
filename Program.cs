@@ -17,6 +17,9 @@ namespace Exercises
             DolarToEuro(1);
             Console.WriteLine("---------------------------");
             EvenOrOdd();
+            Console.WriteLine("---------------------------");
+            DayOfTheWeek();
+            Console.ReadKey();
         }
 
         public static void PrintMyName()
