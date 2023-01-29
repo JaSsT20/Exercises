@@ -13,6 +13,8 @@ namespace Exercises
             DegreesToRadians(1);
             Console.WriteLine("---------------------------");
             CentigradesToFahrenheit(0);
+            Console.WriteLine("---------------------------");
+            DolarToEuro(1);
         }
 
         public static void PrintMyName()
@@ -37,15 +39,22 @@ namespace Exercises
         {
             const float PI = 3.1416f;
             float radians = (degreesToConvert * PI/180);
-            System.Console.WriteLine($"Grados a convertir: {degreesToConvert}");
-            System.Console.WriteLine($"Total radianes: {radians}");
+            Console.WriteLine($"Grados a convertir: {degreesToConvert}");
+            Console.WriteLine($"Total radianes: {radians}");
         }
         //Cap 2 -> Ejercicio 4
         public static void CentigradesToFahrenheit(float centigradesToConvert)
         {
             float fahrenheit = (centigradesToConvert * 9/5) + 32;
-            System.Console.WriteLine($"Grados centígrados a convertir: {centigradesToConvert}°C");
-            System.Console.WriteLine($"Total fahrenheit: {fahrenheit}°F");
+            Console.WriteLine($"Grados centígrados a convertir: {centigradesToConvert}°C");
+            Console.WriteLine($"Total fahrenheit: {fahrenheit}°F");
+        }
+        //Cap 2 -> Ejercicio 5
+        public static void DolarToEuro(float dolarToConvert)
+        {
+            float euros = 0.92f, totalEuros = dolarToConvert * euros;
+            Console.WriteLine($"Dólares a convertir: ${dolarToConvert}");
+            Console.WriteLine($"Total euros: €{totalEuros}");
         }
     }
 }
